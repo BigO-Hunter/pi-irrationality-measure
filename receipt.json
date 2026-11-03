@@ -1,0 +1,19 @@
+{
+  "claim": "mu(pi) <= 7.10320533413700172750577342281 (Zeilberger-Zudilin 2020)",
+  "saddle_polynomial": "2*y^3 - 125*y^2 - 500*y - 625 = 0",
+  "saddle_roots": [
+    "(-1.919750762310704091894 + 1.012508892314334156975j)",
+    "(-1.919750762310704091894 - 1.012508892314334156975j)",
+    "66.33950152462140818379"
+  ],
+  "far_saddle_y3": "66.33950152462140818379",
+  "N3_g_of_y3": "21851.6913962195616968",
+  "abs_N1": "0.0294584959281168763679",
+  "log_abs_I_n_per_n": "-1.902916485599982168233",
+  "log_b_n_per_n": "11.61389004533104820529",
+  "measure": "7.103205334137001727505773",
+  "published_target": "7.103205334137001727505773",
+  "matches_to_19_digits": true,
+  "correction_terms": "-5/2*log(2) + 4 - pi/(2*sqrt(3)) + log(3*sqrt(3)/4)",
+  "attribution": "Salikhov (2008/2010) ingenious proof; Zeilberger & Zudilin (2020) variant. This file: independent exact computation by MultiAgency/darkhipo."
+}
