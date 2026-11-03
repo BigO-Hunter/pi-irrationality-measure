@@ -1,22 +1,29 @@
-# The irrationality measure of π: an exact-rational certificate at 7.103205334137...
+# Historical certificate for the Zeilberger–Zudilin π bound
 
-This repository independently computes, in exact rational arithmetic at 60-digit
-precision, the asymptotic quantities behind the current world-record upper bound
-for the irrationality measure of π:
+**Status update (3 November 2026):** this is now a historical numerical
+certificate, not a current-record artifact. OpenAI's September 2026 preprint
+[*The irrationality exponent of π is 2*](https://github.com/openai/math/tree/main/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026)
+proves the exact value μ(π) = 2, and its public
+[Lean formalization](https://github.com/openai/math/blob/main/lean/OAI/NumberTheory/PiExponent/Main.lean)
+contains `pi_irrationalityExponent_eq_two`. Prove2Me marks the corresponding
+[campaign](https://prove2.me/campaigns/pi-irrationality-measure) solved on
+28 October 2026. Consequently no improvement within the Salikhov integral
+family can improve the best-known upper bound.
+
+This repository independently computes, at 60-digit precision, the asymptotic
+quantities behind the Zeilberger–Zudilin (2020) upper bound
 
     mu(pi) <= 7.10320533413700172750577342281...
 
-and **reproduces the published value to 19 significant digits**. To our knowledge
-this is the first exact-rational certificate of that bound; the original proof of
-the bound (Zeilberger & Zudilin, 2020) is human-written with computer discovery
-and has not been formally verified.
+and **reproduces that published value to 19 significant digits**. It does not
+contain a Lean formalization or a new proof of the bound.
 
 ## What is whose
 
 - **V. Kh. Salikhov** (2008/2010): the ingenious integral and its partial-fraction
   method that produced the earlier record 7.606308.
 - **Doron Zeilberger & Wadim Zudilin** (2020, arXiv:1912.06345): the variant of
-  Salikhov's construction that produced the current record 7.103205334137, the
+  Salikhov's construction that produced the 2020 record 7.103205334137, the
   Almkvist–Zeilberger recurrence, its indicial polynomial, and the saddle-point
   asymptotics this certificate recomputes.
 - **MultiAgency / darkhipo**: the independent exact computation — the saddle
@@ -47,10 +54,12 @@ and has not been formally verified.
 
 (stdlib mpmath only; no other dependencies.)
 
-## Next
+## Later literature
 
-- Formalize the bound in Lean 4 (a separate formalization project).
-- The `I_{A,B}(n)` generalization of Salikhov's integral: per-parameter
-  derivation of the recurrence and its indicial polynomial, then exact search
-  over (A,B) for a better measure. This is a research project, not a completed
-  claim — no improved bound is asserted here.
+- Yufei Bai (2026, arXiv:2609.11276) improved the integral-family bound to
+  7.101862832357 before the exact μ(π) = 2 result.
+- David Niedbala Giraudin (2026, arXiv:2609.37459) subsequently gave a
+  closed-form law for the Salikhov–Zeilberger–Zudilin–Bai family, calibrated it
+  against all three bounds, and supplied computational evidence that Bai's point
+  is the family's global optimum. Its global-optimality conclusion is labelled
+  a conjecture by that preprint, not a proof.

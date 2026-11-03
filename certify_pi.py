@@ -1,6 +1,8 @@
-"""Exact-rational certificate for the current world-record irrationality measure of pi.
+"""Historical numerical certificate for Zeilberger–Zudilin's 2020 pi bound.
 
-Reproduces Zeilberger–Zudilin (2020, arXiv:1912.06345) asymptotics to 19 digits:
+OpenAI's later public Lean proof establishes mu(pi) = 2, so this is not a
+current-record artifact. This script reproduces Zeilberger–Zudilin (2020,
+arXiv:1912.06345) asymptotics to 19 digits:
 the saddle roots of 2y^3-125y^2-500y-625=0, g at those roots, and the measure
 1 + log N_3/|log N_1| with Salikhov's F(n)/lcm correction terms.
 
