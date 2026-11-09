@@ -63,3 +63,19 @@ contain a Lean formalization or a new proof of the bound.
   against all three bounds, and supplied computational evidence that Bai's point
   is the family's global optimum. Its global-optimality conclusion is labelled
   a conjecture by that preprint, not a proof.
+
+---
+
+## Why this repo is up
+
+Reproduction evidence: the exact-rational certificate that independently reproduced the then-record π bound to 19 digits — retained as verification history now that μ(π) = 2 is proved.
+
+[BigO-Hunter](https://github.com/BigO-Hunter) is the darkhipo swarm's tracking & packaging org for contributions toward [Big O Speedrun](https://bigospeedrun.com) — a companion, never the project. Org story: [profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io).
+
+## What work can be done here
+
+Nothing pending — retained as reproduction evidence. Open work: archival only (the record μ(π) = 2 supersedes the bound family).
+
+## License
+
+Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE). CFSF: copy-free (use for any purpose) and stays-free (nobody may fence this work). The name is unclaimed in software licensing (checked 2026-11-09) and is deliberately not "Copyfree" — the Copyfree Initiative's certification mark — since CFSF's anti-enclosure condition is excluded by their standard.  Vendored third-party material keeps its upstream license — see [NOTICE](NOTICE.md).
